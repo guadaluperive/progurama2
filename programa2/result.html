@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Resultado del Método Simplex</title>
+</head>
+<body>
+    <h1>Resultado del Método Simplex</h1>
+    <p>Valor Máximo de Z: {{ optimal_value }}</p>
+    <p>Variables X1, X2: {{ solution }}</p>
+    <h2>Gráfica</h2>
+    <img src="data:image/png;base64,{{ plot_url }}" alt="Gráfica de las restricciones y función objetivo">
+    <br>
+    <a href="{{ url_for('index') }}">Resolver otro problema</a>
+</body>
+</html>
